@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|c:\\users\\daniel\\source\\repos\\slncallejondiagon\\callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|solutionrelative:callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|c:\\users\\daniel\\source\\repos\\slncallejondiagon\\callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|solutionrelative:callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|c:\\users\\daniel\\source\\repos\\slncallejondiagon\\callejondiagon\\data\\d_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|solutionrelative:callejondiagon\\data\\d_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 294,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "D_User.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Data\\D_User.cs",
+              "RelativeDocumentMoniker": "CallejonDiagon\\Data\\D_User.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Data\\D_User.cs",
+              "RelativeToolTip": "CallejonDiagon\\Data\\D_User.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T11:45:54.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Frm_Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Login.cs",
+              "RelativeDocumentMoniker": "CallejonDiagon\\Views\\Frm_Login.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CallejonDiagon\\Views\\Frm_Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T11:45:11.765Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Frm_Login.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Login.cs",
+              "RelativeDocumentMoniker": "CallejonDiagon\\Views\\Frm_Login.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Login.cs",
+              "RelativeToolTip": "CallejonDiagon\\Views\\Frm_Login.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAIwDsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T11:45:00.009Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 106,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
