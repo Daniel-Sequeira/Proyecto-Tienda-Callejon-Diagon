@@ -17,14 +17,21 @@ namespace CallejonDiagon.Views
             InitializeComponent();
         }
 
-        private void Pnl_contenido_Paint(object sender, PaintEventArgs e)
+        #region "Variables"
+        internal int nIdEmpleado {  get; set; }
+        internal string cLoginUs {  get; set; }
+        internal string cNombreEmpleado { get; set; }
+        internal string cDescripcionRol { get;set; }
+        internal int nIdRol { get; set; }
+
+
+
+        #endregion
+
+        private void Frm_principal_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void Pnl_opciones_Paint(object sender, PaintEventArgs e)
-        {
-
+            lblLoginUs.Text = "Login: "+cLoginUs;
+            lbl_DescRol.Text = cDescripcionRol;
         }
     }
 }

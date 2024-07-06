@@ -160,6 +160,7 @@
     <Content Include="Img\Mantenimiento.png" />
     <Content Include="Img\Productos.png" />
     <Content Include="Img\Proveedores.png" />
+    <Content Include="Img\sombrero.png" />
     <Content Include="Img\tienda.png" />
     <Content Include="Img\Ventas.png" />
   </ItemGroup>

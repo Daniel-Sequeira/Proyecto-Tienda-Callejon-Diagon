@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|c:\\users\\daniel\\source\\repos\\slncallejondiagon\\callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|solutionrelative:callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|c:\\users\\daniel\\source\\repos\\slncallejondiagon\\callejondiagon\\views\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|solutionrelative:callejondiagon\\views\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|c:\\users\\daniel\\source\\repos\\slncallejondiagon\\callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|solutionrelative:callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|c:\\users\\daniel\\source\\repos\\slncallejondiagon\\callejondiagon\\data\\d_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|solutionrelative:callejondiagon\\data\\d_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|c:\\users\\daniel\\source\\repos\\slncallejondiagon\\callejondiagon\\views\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|solutionrelative:callejondiagon\\views\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|c:\\users\\daniel\\source\\repos\\slncallejondiagon\\callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7300676-CD58-41CF-849E-4248ADAC2B7C}|CallejonDiagon\\CallejonDiagon.csproj|solutionrelative:callejondiagon\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,16 +38,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "D_User.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Data\\D_User.cs",
-              "RelativeDocumentMoniker": "CallejonDiagon\\Data\\D_User.cs",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Data\\D_User.cs",
-              "RelativeToolTip": "CallejonDiagon\\Data\\D_User.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "Frm_Login.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Login.cs",
+              "RelativeDocumentMoniker": "CallejonDiagon\\Views\\Frm_Login.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Login.cs",
+              "RelativeToolTip": "CallejonDiagon\\Views\\Frm_Login.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAewDoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T11:45:54.584Z",
+              "WhenOpened": "2024-07-06T12:12:38.21Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frm_Principal.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Principal.cs",
+              "RelativeDocumentMoniker": "CallejonDiagon\\Views\\Frm_Principal.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Principal.cs",
+              "RelativeToolTip": "CallejonDiagon\\Views\\Frm_Principal.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAApwCEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T12:05:14.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Frm_Principal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Principal.cs",
+              "RelativeDocumentMoniker": "CallejonDiagon\\Views\\Frm_Principal.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Principal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CallejonDiagon\\Views\\Frm_Principal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T12:04:08.991Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -54,21 +83,8 @@
               "ToolTip": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Login.cs [Dise\u00F1o]",
               "RelativeToolTip": "CallejonDiagon\\Views\\Frm_Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T11:45:11.765Z",
+              "WhenOpened": "2024-07-06T12:12:36.583Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Frm_Login.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Login.cs",
-              "RelativeDocumentMoniker": "CallejonDiagon\\Views\\Frm_Login.cs",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\SlnCallejonDiagon\\CallejonDiagon\\Views\\Frm_Login.cs",
-              "RelativeToolTip": "CallejonDiagon\\Views\\Frm_Login.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAIwDsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T11:45:00.009Z",
-              "EditorCaption": ""
             }
           ]
         },

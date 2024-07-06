@@ -48,6 +48,11 @@ namespace CallejonDiagon.Views
             if(TablaLogin.Rows.Count > 0)
             {
                Frm_principal oFrm_Principal = new Frm_principal();
+                oFrm_Principal.nIdEmpleado = Convert.ToInt32(TablaLogin.Rows[0][0]);
+                oFrm_Principal.cLoginUs = Convert.ToString(TablaLogin.Rows[0][1]);
+                oFrm_Principal.cNombreEmpleado = Convert.ToString(TablaLogin.Rows[0][2]);
+                oFrm_Principal.cDescripcionRol = Convert.ToString(TablaLogin.Rows[0][3]);
+                oFrm_Principal.nIdRol = Convert.ToInt32(TablaLogin.Rows[0][4]);
                 oFrm_Principal.Show();
                 oFrm_Principal.FormClosed += Logout;
                 this.Hide();
