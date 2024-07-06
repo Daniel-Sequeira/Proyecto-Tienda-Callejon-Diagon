@@ -42,3 +42,4 @@ C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\Callejon
 C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.pdb
 C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.Views.Frm_principal.resources
 C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.Views.Frm_Login.resources
+C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.Views.FrmUsuarios.resources

@@ -24,11 +24,12 @@ namespace CallejonDiagon.Views
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
-        #region "Metod"
+        #region "Metodos"
         private void Logout(object sender, FormClosedEventArgs e)
         {
             this.txt_Login.Text = "";
             this.txt_Password.Text = "";
+            this.Show();
             this.txt_Login.Select();
         
         }

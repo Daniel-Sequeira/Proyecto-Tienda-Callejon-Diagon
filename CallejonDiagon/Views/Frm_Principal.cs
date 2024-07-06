@@ -33,5 +33,22 @@ namespace CallejonDiagon.Views
             lblLoginUs.Text = "Login: "+cLoginUs;
             lbl_DescRol.Text = cDescripcionRol;
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            DialogResult Opcion;
+            Opcion= MessageBox.Show("Desea salir de la Aplicación?", "Aviso del Sistema", MessageBoxButtons.OKCancel,
+                                      MessageBoxIcon.Question);
+            if (Opcion == DialogResult.OK) 
+            {
+                this.Close();
+            }
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios oFrmUsuarios = new FrmUsuarios();   
+            oFrmUsuarios.ShowDialog();
+        }
     }
 }
