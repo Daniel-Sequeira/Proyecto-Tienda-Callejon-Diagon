@@ -18,7 +18,7 @@ namespace CallejonDiagon.Data
             MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon = Connection.GetInstancia().ConectarBD();
+                SqlCon = Connexion.GetInstancia().ConectarBD();
                 MySqlCommand Comando = new MySqlCommand("usp_login", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.Add("cloginUs", MySqlDbType.VarChar).Value = cLoginUs;
@@ -44,7 +44,7 @@ namespace CallejonDiagon.Data
             MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon = Connection.GetInstancia().ConectarBD();
+                SqlCon = Connexion.GetInstancia().ConectarBD();
                 MySqlCommand Comando = new MySqlCommand("usp_listaUs", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.Add("cTexto", MySqlDbType.VarChar).Value = cTexto;
@@ -69,7 +69,7 @@ namespace CallejonDiagon.Data
             MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon = Connection.GetInstancia().ConectarBD();
+                SqlCon = Connexion.GetInstancia().ConectarBD();
                 MySqlCommand Comando = new MySqlCommand("usp_listaRol", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 SqlCon.Open();
@@ -93,8 +93,8 @@ namespace CallejonDiagon.Data
             MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon = Connection.GetInstancia().ConectarBD();
-                MySqlCommand Comando = new MySqlCommand("usp_listaSala", SqlCon);
+                SqlCon = Connexion.GetInstancia().ConectarBD();
+                MySqlCommand Comando = new MySqlCommand("usp_listaSalario", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 SqlCon.Open();
                 Resultado = Comando.ExecuteReader();
@@ -116,7 +116,7 @@ namespace CallejonDiagon.Data
             MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon = Connection.GetInstancia().ConectarBD();
+                SqlCon = Connexion.GetInstancia().ConectarBD();
                 MySqlCommand Comando = new MySqlCommand("usp_guardarUsuario", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.Add("nOpcion",MySqlDbType.Int32).Value = nOpcion;
@@ -152,7 +152,30 @@ namespace CallejonDiagon.Data
             }
             return Respuesta;
         }
-        
+        public string ActivoUs(int nidEmpleado)
+        {
+            string Respuesta = "";
+            MySqlConnection SqlCon = new MySqlConnection();
+            try
+            {
+                SqlCon = Connexion.GetInstancia().ConectarBD();
+                MySqlCommand Comando = new MySqlCommand("usp_esActivo", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("nidEmpleado", MySqlDbType.Int32).Value = nidEmpleado;
+                SqlCon.Open();
+                Respuesta = Comando.ExecuteNonQuery() >= 1 ? "OK" : "No Modificado";
+            }
+            catch (Exception ex)
+            {
+                Respuesta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return Respuesta;
+        }
+
     }
 
 

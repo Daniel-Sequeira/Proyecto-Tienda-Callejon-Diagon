@@ -7,16 +7,16 @@ using MySql.Data.MySqlClient;
 
 namespace CallejonDiagon.Data
 {
-    internal class Connection
+    internal class Connexion
     {
         private string DataBase;
         private string Server;
         private string Port;
         private string User;
         private string Password;
-        private static Connection Con = null;
+        private static Connexion Con = null;
 
-        private Connection ()
+        private Connexion ()
         {
             this.DataBase = "tiendacallejondiagon";
             this.Server = "localhost";
@@ -40,11 +40,11 @@ namespace CallejonDiagon.Data
             }
             return Cadena;
         }
-        public static Connection GetInstancia() 
+        public static Connexion GetInstancia() 
         {
             if (Con == null)
             {
-              Con = new Connection();
+              Con = new Connexion();
             }
             return Con;
         }

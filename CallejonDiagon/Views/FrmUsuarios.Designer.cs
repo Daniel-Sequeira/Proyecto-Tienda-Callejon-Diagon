@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsuarios));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlTareasUsuarios = new System.Windows.Forms.Panel();
             this.btnRetorno = new System.Windows.Forms.Button();
             this.btnStatusU = new System.Windows.Forms.Button();
@@ -88,7 +88,7 @@
             this.pnlTareasUsuarios.Controls.Add(this.btnActualizarUsuario);
             this.pnlTareasUsuarios.Controls.Add(this.btnRegistrarUsuario);
             this.pnlTareasUsuarios.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlTareasUsuarios.Location = new System.Drawing.Point(1546, 0);
+            this.pnlTareasUsuarios.Location = new System.Drawing.Point(1644, 0);
             this.pnlTareasUsuarios.Name = "pnlTareasUsuarios";
             this.pnlTareasUsuarios.Size = new System.Drawing.Size(438, 1322);
             this.pnlTareasUsuarios.TabIndex = 0;
@@ -116,6 +116,7 @@
             this.btnStatusU.TabIndex = 2;
             this.btnStatusU.Text = "Estado Usuario";
             this.btnStatusU.UseVisualStyleBackColor = false;
+            this.btnStatusU.Click += new System.EventHandler(this.btnStatusU_Click);
             // 
             // btnActualizarUsuario
             // 
@@ -127,6 +128,7 @@
             this.btnActualizarUsuario.TabIndex = 1;
             this.btnActualizarUsuario.Text = "Modificar Usuario";
             this.btnActualizarUsuario.UseVisualStyleBackColor = false;
+            this.btnActualizarUsuario.Click += new System.EventHandler(this.btnActualizarUsuario_Click);
             // 
             // btnRegistrarUsuario
             // 
@@ -149,7 +151,7 @@
             this.pnlTituloUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTituloUsuarios.Location = new System.Drawing.Point(0, 0);
             this.pnlTituloUsuarios.Name = "pnlTituloUsuarios";
-            this.pnlTituloUsuarios.Size = new System.Drawing.Size(1546, 197);
+            this.pnlTituloUsuarios.Size = new System.Drawing.Size(1644, 197);
             this.pnlTituloUsuarios.TabIndex = 0;
             // 
             // pictureBox1
@@ -179,6 +181,7 @@
             // pnlTrabajoUsuarios
             // 
             this.pnlTrabajoUsuarios.AutoScroll = true;
+            this.pnlTrabajoUsuarios.AutoSize = true;
             this.pnlTrabajoUsuarios.Controls.Add(this.txtTelefonoEmp);
             this.pnlTrabajoUsuarios.Controls.Add(this.label8);
             this.pnlTrabajoUsuarios.Controls.Add(this.lblTelefonoEmp);
@@ -216,7 +219,7 @@
             this.pnlTrabajoUsuarios.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlTrabajoUsuarios.Location = new System.Drawing.Point(0, 197);
             this.pnlTrabajoUsuarios.Name = "pnlTrabajoUsuarios";
-            this.pnlTrabajoUsuarios.Size = new System.Drawing.Size(1546, 1125);
+            this.pnlTrabajoUsuarios.Size = new System.Drawing.Size(1644, 1125);
             this.pnlTrabajoUsuarios.TabIndex = 1;
             // 
             // txtTelefonoEmp
@@ -233,7 +236,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(977, 359);
+            this.label8.Location = new System.Drawing.Point(965, 362);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(27, 33);
             this.label8.TabIndex = 32;
@@ -243,7 +246,7 @@
             // 
             this.lblTelefonoEmp.AutoSize = true;
             this.lblTelefonoEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefonoEmp.Location = new System.Drawing.Point(848, 362);
+            this.lblTelefonoEmp.Location = new System.Drawing.Point(843, 362);
             this.lblTelefonoEmp.Name = "lblTelefonoEmp";
             this.lblTelefonoEmp.Size = new System.Drawing.Size(128, 33);
             this.lblTelefonoEmp.TabIndex = 31;
@@ -263,7 +266,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(977, 271);
+            this.label6.Location = new System.Drawing.Point(965, 269);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(27, 33);
             this.label6.TabIndex = 29;
@@ -274,7 +277,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(977, 172);
+            this.label7.Location = new System.Drawing.Point(965, 171);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(27, 33);
             this.label7.TabIndex = 28;
@@ -294,7 +297,7 @@
             // 
             this.lblSalario.AutoSize = true;
             this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(865, 164);
+            this.lblSalario.Location = new System.Drawing.Point(863, 167);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(106, 33);
             this.lblSalario.TabIndex = 26;
@@ -304,7 +307,7 @@
             // 
             this.lblCorreoEmp.AutoSize = true;
             this.lblCorreoEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreoEmp.Location = new System.Drawing.Point(867, 269);
+            this.lblCorreoEmp.Location = new System.Drawing.Point(865, 269);
             this.lblCorreoEmp.Name = "lblCorreoEmp";
             this.lblCorreoEmp.Size = new System.Drawing.Size(104, 33);
             this.lblCorreoEmp.TabIndex = 25;
@@ -387,24 +390,24 @@
             this.dgvListaUsuarios.AllowUserToAddRows = false;
             this.dgvListaUsuarios.AllowUserToDeleteRows = false;
             this.dgvListaUsuarios.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListaUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListaUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvListaUsuarios.ColumnHeadersHeight = 40;
             this.dgvListaUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightCyan;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvListaUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightCyan;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvListaUsuarios.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvListaUsuarios.EnableHeadersVisualStyles = false;
             this.dgvListaUsuarios.Location = new System.Drawing.Point(63, 723);
             this.dgvListaUsuarios.Name = "dgvListaUsuarios";
@@ -412,8 +415,9 @@
             this.dgvListaUsuarios.RowHeadersWidth = 82;
             this.dgvListaUsuarios.RowTemplate.Height = 33;
             this.dgvListaUsuarios.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvListaUsuarios.Size = new System.Drawing.Size(1392, 358);
+            this.dgvListaUsuarios.Size = new System.Drawing.Size(1553, 358);
             this.dgvListaUsuarios.TabIndex = 17;
+            this.dgvListaUsuarios.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaUsuarios_CellEnter);
             // 
             // txtBuscar
             // 
@@ -439,7 +443,7 @@
             this.btnGuardar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(397, 372);
+            this.btnGuardar.Location = new System.Drawing.Point(397, 374);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(246, 83);
             this.btnGuardar.TabIndex = 14;
@@ -478,7 +482,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(977, 24);
+            this.label2.Location = new System.Drawing.Point(965, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 33);
             this.label2.TabIndex = 11;
@@ -489,7 +493,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(977, 92);
+            this.label1.Location = new System.Drawing.Point(954, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(27, 33);
             this.label1.TabIndex = 10;
@@ -559,7 +563,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(833, 92);
+            this.lblPassword.Location = new System.Drawing.Point(816, 92);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(143, 33);
             this.lblPassword.TabIndex = 3;
@@ -578,7 +582,7 @@
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(890, 24);
+            this.lblLogin.Location = new System.Drawing.Point(883, 24);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(86, 33);
             this.lblLogin.TabIndex = 0;
@@ -588,7 +592,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1984, 1322);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(2082, 1322);
             this.Controls.Add(this.pnlTrabajoUsuarios);
             this.Controls.Add(this.pnlTituloUsuarios);
             this.Controls.Add(this.pnlTareasUsuarios);

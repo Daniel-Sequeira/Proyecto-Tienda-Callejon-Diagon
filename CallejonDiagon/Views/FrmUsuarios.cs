@@ -20,17 +20,17 @@ namespace CallejonDiagon.Views
             
         }
 
-        #region "Variables"
+        #region "Variables"//////////////////////////////////
 
         int nIdEmpleado = 0;
         int nEstadoGuarda = 0;
 
-        #endregion
+        #endregion/////////////////////////////////////////
 
 
 
 
-        #region"Metodos Us"
+        #region"Metodos Us"//////////////////////////////////
 
         private void LimpiaTexto()
         {
@@ -54,6 +54,7 @@ namespace CallejonDiagon.Views
             txtTelefonoEmp.Enabled = lEstado;
             cbRol.Enabled = lEstado;
             cbSalario.Enabled = lEstado;
+
         }
 
         private void EstadoBtnProcesos(bool lEstado)
@@ -84,7 +85,9 @@ namespace CallejonDiagon.Views
             dgvListaUsuarios.Columns[3].HeaderText = "ROL_EMPLEADO";
             dgvListaUsuarios.Columns[4].Width = 90;
             dgvListaUsuarios.Columns[4].HeaderText = "ESTADO";
-            dgvListaUsuarios.Columns[5].Visible = false;
+            dgvListaUsuarios.Columns[5].Width = 90;
+            dgvListaUsuarios.Columns[5].HeaderText = "SALARIO";
+            dgvListaUsuarios.Columns[6].Visible = false;
         }
         private void ListadoUs(string cTexto)
         {
@@ -129,7 +132,30 @@ namespace CallejonDiagon.Views
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
-        #endregion
+
+        private void SeleccionaItem()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(dgvListaUsuarios.CurrentRow.Cells["idEmpleado"].Value)))
+            {
+                MessageBox.Show("Selecione un registro",
+                "Aviso del Sistema", MessageBoxButtons.OK, 
+                    MessageBoxIcon.Exclamation);
+
+            }
+            else 
+            {
+                nIdEmpleado = Convert.ToInt32(dgvListaUsuarios.CurrentRow.Cells["idEmpleado"].Value);
+                txtNombre.Text = dgvListaUsuarios.CurrentRow.Cells["nombreEmpleado"].Value.ToString();
+                txtPassword.Text = "";
+                cbRol.Text = dgvListaUsuarios.CurrentRow.Cells["descripcionRol"].Value.ToString();
+
+
+
+            }
+
+        }
+
+        #endregion////////////////////////////////////////
 
 
 
@@ -227,7 +253,44 @@ namespace CallejonDiagon.Views
             this.ListadoUs(txtBuscar.Text);
         }
 
-        
+        private void btnActualizarUsuario_Click(object sender, EventArgs e)
+        {
+            nEstadoGuarda = 2;
+            this.EstadoTexto(true);
+            this.txtLogin.Enabled = false;
+            this.EstadoBtnProcesos(true);
+            this.EstadoBtnPrincipales(false);
+            this.ListadoUs("%");
+            this.txtCedula.Focus();
+        }
+
+        private void dgvListaUsuarios_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            this.SeleccionaItem();
+        }
+
+        private void btnStatusU_Click(object sender, EventArgs e)
+        {
+            if (dgvListaUsuarios.Rows.Count>0)
+            {
+                string Respuesta = "";
+                D_User Datos = new D_User();
+                Respuesta = Datos.ActivoUs(Convert.ToInt32(dgvListaUsuarios.CurrentRow.Cells["idEmpleado"].Value));
+                if (Respuesta.Equals("OK"))
+                {
+                    this.ListadoUs("%");
+                    MessageBox.Show("Estado Actualizado Exitosamente",
+                        "Aviso del Sistema",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    MessageBox.Show(Respuesta,"Aviso del Sistema",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 
 
