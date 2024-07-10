@@ -64,5 +64,23 @@ namespace CallejonDiagon.Views
             FrmProductos oFrmProductos = new FrmProductos();
             oFrmProductos.ShowDialog();
         }
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            FrmCategorias oFrmCategorias = new FrmCategorias();
+            oFrmCategorias.ShowDialog();
+        }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            FrmProveedores oFrmProveedores = new FrmProveedores();
+            oFrmProveedores.ShowDialog();
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            FrmClientes oFrmClientes= new FrmClientes();
+            oFrmClientes.ShowDialog();
+        }
     }
 }

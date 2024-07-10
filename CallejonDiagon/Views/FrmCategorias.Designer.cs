@@ -41,10 +41,8 @@
             this.BtnRegistrarCat = new System.Windows.Forms.Button();
             this.txtDescCat = new System.Windows.Forms.TextBox();
             this.lblDescCat = new System.Windows.Forms.Label();
-            this.BtnBuscarCat = new System.Windows.Forms.Button();
-            this.txtBuscarCat = new System.Windows.Forms.TextBox();
-            this.btnGuardarCat = new System.Windows.Forms.Button();
-            this.btnCancelarCat = new System.Windows.Forms.Button();
+            this.BtnGuardarCat = new System.Windows.Forms.Button();
+            this.BtnCancelarCat = new System.Windows.Forms.Button();
             this.dgvListaCategorias = new System.Windows.Forms.DataGridView();
             this.pnlTituloUsuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -112,6 +110,7 @@
             this.BtnRetornoCat.TabIndex = 3;
             this.BtnRetornoCat.Text = "Regresar";
             this.BtnRetornoCat.UseVisualStyleBackColor = false;
+            this.BtnRetornoCat.Click += new System.EventHandler(this.BtnRetornoCat_Click);
             // 
             // BtnStatusCat
             // 
@@ -123,6 +122,7 @@
             this.BtnStatusCat.TabIndex = 2;
             this.BtnStatusCat.Text = "Estado Categoria";
             this.BtnStatusCat.UseVisualStyleBackColor = false;
+            this.BtnStatusCat.Click += new System.EventHandler(this.BtnStatusCat_Click);
             // 
             // BtnModificarCat
             // 
@@ -134,6 +134,7 @@
             this.BtnModificarCat.TabIndex = 1;
             this.BtnModificarCat.Text = "Modificar Categoria";
             this.BtnModificarCat.UseVisualStyleBackColor = false;
+            this.BtnModificarCat.Click += new System.EventHandler(this.BtnModificarCat_Click);
             // 
             // BtnRegistrarCat
             // 
@@ -145,11 +146,12 @@
             this.BtnRegistrarCat.TabIndex = 0;
             this.BtnRegistrarCat.Text = "Registrar Categoria";
             this.BtnRegistrarCat.UseVisualStyleBackColor = false;
+            this.BtnRegistrarCat.Click += new System.EventHandler(this.BtnRegistrarCat_Click);
             // 
             // txtDescCat
             // 
             this.txtDescCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescCat.Location = new System.Drawing.Point(371, 233);
+            this.txtDescCat.Location = new System.Drawing.Point(374, 270);
             this.txtDescCat.MaxLength = 50;
             this.txtDescCat.Name = "txtDescCat";
             this.txtDescCat.Size = new System.Drawing.Size(457, 40);
@@ -159,57 +161,39 @@
             // 
             this.lblDescCat.AutoSize = true;
             this.lblDescCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescCat.Location = new System.Drawing.Point(62, 233);
+            this.lblDescCat.Location = new System.Drawing.Point(49, 273);
             this.lblDescCat.Name = "lblDescCat";
             this.lblDescCat.Size = new System.Drawing.Size(303, 33);
             this.lblDescCat.TabIndex = 22;
             this.lblDescCat.Text = "Descripcion Categoria";
             // 
-            // BtnBuscarCat
+            // BtnGuardarCat
             // 
-            this.BtnBuscarCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BtnBuscarCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscarCat.Location = new System.Drawing.Point(68, 343);
-            this.BtnBuscarCat.Name = "BtnBuscarCat";
-            this.BtnBuscarCat.Size = new System.Drawing.Size(234, 51);
-            this.BtnBuscarCat.TabIndex = 23;
-            this.BtnBuscarCat.Text = "Buscar";
-            this.BtnBuscarCat.UseVisualStyleBackColor = false;
+            this.BtnGuardarCat.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.BtnGuardarCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuardarCat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnGuardarCat.Location = new System.Drawing.Point(925, 498);
+            this.BtnGuardarCat.Name = "BtnGuardarCat";
+            this.BtnGuardarCat.Size = new System.Drawing.Size(246, 83);
+            this.BtnGuardarCat.TabIndex = 26;
+            this.BtnGuardarCat.Text = "Guardar";
+            this.BtnGuardarCat.UseVisualStyleBackColor = false;
+            this.BtnGuardarCat.Visible = false;
+            this.BtnGuardarCat.Click += new System.EventHandler(this.BtnGuardarCat_Click);
             // 
-            // txtBuscarCat
+            // BtnCancelarCat
             // 
-            this.txtBuscarCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarCat.Location = new System.Drawing.Point(361, 343);
-            this.txtBuscarCat.MaxLength = 100;
-            this.txtBuscarCat.Name = "txtBuscarCat";
-            this.txtBuscarCat.Size = new System.Drawing.Size(467, 40);
-            this.txtBuscarCat.TabIndex = 24;
-            // 
-            // btnGuardarCat
-            // 
-            this.btnGuardarCat.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnGuardarCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarCat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarCat.Location = new System.Drawing.Point(913, 233);
-            this.btnGuardarCat.Name = "btnGuardarCat";
-            this.btnGuardarCat.Size = new System.Drawing.Size(246, 83);
-            this.btnGuardarCat.TabIndex = 26;
-            this.btnGuardarCat.Text = "Guardar";
-            this.btnGuardarCat.UseVisualStyleBackColor = false;
-            this.btnGuardarCat.Visible = false;
-            // 
-            // btnCancelarCat
-            // 
-            this.btnCancelarCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnCancelarCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarCat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelarCat.Location = new System.Drawing.Point(913, 353);
-            this.btnCancelarCat.Name = "btnCancelarCat";
-            this.btnCancelarCat.Size = new System.Drawing.Size(246, 80);
-            this.btnCancelarCat.TabIndex = 25;
-            this.btnCancelarCat.Text = "Cancelar";
-            this.btnCancelarCat.UseVisualStyleBackColor = false;
-            this.btnCancelarCat.Visible = false;
+            this.BtnCancelarCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnCancelarCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelarCat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnCancelarCat.Location = new System.Drawing.Point(925, 637);
+            this.BtnCancelarCat.Name = "BtnCancelarCat";
+            this.BtnCancelarCat.Size = new System.Drawing.Size(246, 80);
+            this.BtnCancelarCat.TabIndex = 25;
+            this.BtnCancelarCat.Text = "Cancelar";
+            this.BtnCancelarCat.UseVisualStyleBackColor = false;
+            this.BtnCancelarCat.Visible = false;
+            this.BtnCancelarCat.Click += new System.EventHandler(this.BtnCancelarCat_Click);
             // 
             // dgvListaCategorias
             // 
@@ -235,14 +219,15 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvListaCategorias.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListaCategorias.EnableHeadersVisualStyles = false;
-            this.dgvListaCategorias.Location = new System.Drawing.Point(131, 498);
+            this.dgvListaCategorias.Location = new System.Drawing.Point(68, 462);
             this.dgvListaCategorias.Name = "dgvListaCategorias";
             this.dgvListaCategorias.ReadOnly = true;
             this.dgvListaCategorias.RowHeadersWidth = 82;
             this.dgvListaCategorias.RowTemplate.Height = 33;
             this.dgvListaCategorias.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvListaCategorias.Size = new System.Drawing.Size(905, 219);
+            this.dgvListaCategorias.Size = new System.Drawing.Size(763, 255);
             this.dgvListaCategorias.TabIndex = 27;
+            this.dgvListaCategorias.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaCategorias_CellEnter);
             // 
             // FrmCategorias
             // 
@@ -250,16 +235,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1660, 832);
             this.Controls.Add(this.dgvListaCategorias);
-            this.Controls.Add(this.btnGuardarCat);
-            this.Controls.Add(this.btnCancelarCat);
-            this.Controls.Add(this.txtBuscarCat);
-            this.Controls.Add(this.BtnBuscarCat);
+            this.Controls.Add(this.BtnGuardarCat);
+            this.Controls.Add(this.BtnCancelarCat);
             this.Controls.Add(this.lblDescCat);
             this.Controls.Add(this.txtDescCat);
             this.Controls.Add(this.pnlTareasUsuarios);
             this.Controls.Add(this.pnlTituloUsuarios);
             this.Name = "FrmCategorias";
             this.Text = "FrmCategorias";
+            this.Load += new System.EventHandler(this.FrmCategorias_Load);
             this.pnlTituloUsuarios.ResumeLayout(false);
             this.pnlTituloUsuarios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -282,10 +266,8 @@
         private System.Windows.Forms.Button BtnRegistrarCat;
         private System.Windows.Forms.TextBox txtDescCat;
         private System.Windows.Forms.Label lblDescCat;
-        private System.Windows.Forms.Button BtnBuscarCat;
-        private System.Windows.Forms.TextBox txtBuscarCat;
-        private System.Windows.Forms.Button btnGuardarCat;
-        private System.Windows.Forms.Button btnCancelarCat;
+        private System.Windows.Forms.Button BtnGuardarCat;
+        private System.Windows.Forms.Button BtnCancelarCat;
         private System.Windows.Forms.DataGridView dgvListaCategorias;
     }
 }
