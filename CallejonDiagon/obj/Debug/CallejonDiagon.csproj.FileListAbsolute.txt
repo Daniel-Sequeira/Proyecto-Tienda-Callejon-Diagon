@@ -43,3 +43,4 @@ C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\Callejon
 C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\Callejon.8EFBBF83.Up2Date
 C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.exe
 C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.pdb
+C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.Views.FrmProductos.resources

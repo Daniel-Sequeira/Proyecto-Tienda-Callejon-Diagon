@@ -47,8 +47,22 @@ namespace CallejonDiagon.Views
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            FrmUsuarios oFrmUsuarios = new FrmUsuarios();   
-            oFrmUsuarios.ShowDialog();
+            if (nIdRol == 1)
+            {
+                FrmUsuarios oFrmUsuarios = new FrmUsuarios();
+                oFrmUsuarios.ShowDialog();
+            }
+            else 
+            {
+                MessageBox.Show("Acceso Denegado--Requiere Privilegios de Acceso Administrador", "Aviso del Sistema",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            FrmProductos oFrmProductos = new FrmProductos();
+            oFrmProductos.ShowDialog();
         }
     }
 }

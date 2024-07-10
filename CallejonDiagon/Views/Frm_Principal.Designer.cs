@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_principal));
             this.Pnl_opciones = new System.Windows.Forms.Panel();
+            this.btnHistorial = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnTienda = new System.Windows.Forms.Button();
             this.Pnl_superior = new System.Windows.Forms.Panel();
             this.pb_Logo = new System.Windows.Forms.PictureBox();
             this.lbl_Tituloprin = new System.Windows.Forms.Label();
@@ -38,17 +43,12 @@
             this.lbl_DescRol = new System.Windows.Forms.Label();
             this.lblLoginUs = new System.Windows.Forms.Label();
             this.Pnl_contenido = new System.Windows.Forms.Panel();
-            this.btnHistorial = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnVentas = new System.Windows.Forms.Button();
             this.btnCompras = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProveedores = new System.Windows.Forms.Button();
             this.btnCategorias = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
-            this.btnTienda = new System.Windows.Forms.Button();
-            this.btnUsuarios = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.Pnl_opciones.SuspendLayout();
             this.Pnl_superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).BeginInit();
@@ -68,6 +68,72 @@
             this.Pnl_opciones.Name = "Pnl_opciones";
             this.Pnl_opciones.Size = new System.Drawing.Size(398, 1183);
             this.Pnl_opciones.TabIndex = 0;
+            // 
+            // btnHistorial
+            // 
+            this.btnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHistorial.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistorial.ImageKey = "Historial.png";
+            this.btnHistorial.ImageList = this.imageList1;
+            this.btnHistorial.Location = new System.Drawing.Point(137, 867);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.Size = new System.Drawing.Size(164, 135);
+            this.btnHistorial.TabIndex = 12;
+            this.btnHistorial.Text = "Historial";
+            this.btnHistorial.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnHistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnHistorial.UseVisualStyleBackColor = true;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "tienda.png");
+            this.imageList1.Images.SetKeyName(1, "Productos.png");
+            this.imageList1.Images.SetKeyName(2, "categorias.png");
+            this.imageList1.Images.SetKeyName(3, "Clientes.png");
+            this.imageList1.Images.SetKeyName(4, "Empleados.png");
+            this.imageList1.Images.SetKeyName(5, "Historial.png");
+            this.imageList1.Images.SetKeyName(6, "Mantenimiento.png");
+            this.imageList1.Images.SetKeyName(7, "Proveedores.png");
+            this.imageList1.Images.SetKeyName(8, "Ventas.png");
+            this.imageList1.Images.SetKeyName(9, "Buscar.png");
+            this.imageList1.Images.SetKeyName(10, "Compras.png");
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(97, 548);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(204, 86);
+            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.Text = "Cerrar Sesión";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.Location = new System.Drawing.Point(103, 322);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(204, 86);
+            this.btnUsuarios.TabIndex = 1;
+            this.btnUsuarios.Text = "Gestión Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            // 
+            // btnTienda
+            // 
+            this.btnTienda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTienda.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTienda.ImageKey = "tienda.png";
+            this.btnTienda.ImageList = this.imageList1;
+            this.btnTienda.Location = new System.Drawing.Point(103, 88);
+            this.btnTienda.Name = "btnTienda";
+            this.btnTienda.Size = new System.Drawing.Size(208, 125);
+            this.btnTienda.TabIndex = 0;
+            this.btnTienda.Text = "Tienda";
+            this.btnTienda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTienda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnTienda.UseVisualStyleBackColor = true;
             // 
             // Pnl_superior
             // 
@@ -150,46 +216,15 @@
             this.Pnl_contenido.Size = new System.Drawing.Size(1537, 818);
             this.Pnl_contenido.TabIndex = 3;
             // 
-            // btnHistorial
-            // 
-            this.btnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHistorial.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistorial.ImageKey = "Historial.png";
-            this.btnHistorial.ImageList = this.imageList1;
-            this.btnHistorial.Location = new System.Drawing.Point(137, 867);
-            this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(164, 135);
-            this.btnHistorial.TabIndex = 12;
-            this.btnHistorial.Text = "Historial";
-            this.btnHistorial.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnHistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnHistorial.UseVisualStyleBackColor = true;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "tienda.png");
-            this.imageList1.Images.SetKeyName(1, "Productos.png");
-            this.imageList1.Images.SetKeyName(2, "categorias.png");
-            this.imageList1.Images.SetKeyName(3, "Clientes.png");
-            this.imageList1.Images.SetKeyName(4, "Empleados.png");
-            this.imageList1.Images.SetKeyName(5, "Historial.png");
-            this.imageList1.Images.SetKeyName(6, "Mantenimiento.png");
-            this.imageList1.Images.SetKeyName(7, "Proveedores.png");
-            this.imageList1.Images.SetKeyName(8, "Ventas.png");
-            this.imageList1.Images.SetKeyName(9, "Buscar.png");
-            this.imageList1.Images.SetKeyName(10, "Compras.png");
-            // 
             // btnVentas
             // 
             this.btnVentas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVentas.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVentas.ImageKey = "Ventas.png";
             this.btnVentas.ImageList = this.imageList1;
-            this.btnVentas.Location = new System.Drawing.Point(1297, 35);
+            this.btnVentas.Location = new System.Drawing.Point(421, 457);
             this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(164, 135);
+            this.btnVentas.Size = new System.Drawing.Size(240, 191);
             this.btnVentas.TabIndex = 11;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -202,9 +237,9 @@
             this.btnCompras.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompras.ImageKey = "Compras.png";
             this.btnCompras.ImageList = this.imageList1;
-            this.btnCompras.Location = new System.Drawing.Point(739, 35);
+            this.btnCompras.Location = new System.Drawing.Point(776, 475);
             this.btnCompras.Name = "btnCompras";
-            this.btnCompras.Size = new System.Drawing.Size(164, 135);
+            this.btnCompras.Size = new System.Drawing.Size(240, 173);
             this.btnCompras.TabIndex = 10;
             this.btnCompras.Text = "Compras";
             this.btnCompras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -217,9 +252,9 @@
             this.btnClientes.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ImageKey = "Clientes.png";
             this.btnClientes.ImageList = this.imageList1;
-            this.btnClientes.Location = new System.Drawing.Point(1103, 35);
+            this.btnClientes.Location = new System.Drawing.Point(61, 457);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(164, 135);
+            this.btnClientes.Size = new System.Drawing.Size(240, 191);
             this.btnClientes.TabIndex = 4;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -232,9 +267,9 @@
             this.btnProveedores.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProveedores.ImageKey = "Proveedores.png";
             this.btnProveedores.ImageList = this.imageList1;
-            this.btnProveedores.Location = new System.Drawing.Point(550, 35);
+            this.btnProveedores.Location = new System.Drawing.Point(776, 101);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(164, 135);
+            this.btnProveedores.Size = new System.Drawing.Size(240, 191);
             this.btnProveedores.TabIndex = 3;
             this.btnProveedores.Text = "Proveedor";
             this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -247,9 +282,9 @@
             this.btnCategorias.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategorias.ImageKey = "categorias.png";
             this.btnCategorias.ImageList = this.imageList1;
-            this.btnCategorias.Location = new System.Drawing.Point(234, 35);
+            this.btnCategorias.Location = new System.Drawing.Point(421, 101);
             this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.Size = new System.Drawing.Size(164, 135);
+            this.btnCategorias.Size = new System.Drawing.Size(240, 191);
             this.btnCategorias.TabIndex = 2;
             this.btnCategorias.Text = "Categorias";
             this.btnCategorias.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -262,49 +297,15 @@
             this.btnProductos.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.ImageKey = "Productos.png";
             this.btnProductos.ImageList = this.imageList1;
-            this.btnProductos.Location = new System.Drawing.Point(36, 35);
+            this.btnProductos.Location = new System.Drawing.Point(61, 101);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(164, 135);
+            this.btnProductos.Size = new System.Drawing.Size(240, 191);
             this.btnProductos.TabIndex = 1;
             this.btnProductos.Text = "Productos";
             this.btnProductos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProductos.UseVisualStyleBackColor = true;
-            // 
-            // btnTienda
-            // 
-            this.btnTienda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTienda.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTienda.ImageKey = "tienda.png";
-            this.btnTienda.ImageList = this.imageList1;
-            this.btnTienda.Location = new System.Drawing.Point(103, 88);
-            this.btnTienda.Name = "btnTienda";
-            this.btnTienda.Size = new System.Drawing.Size(208, 125);
-            this.btnTienda.TabIndex = 0;
-            this.btnTienda.Text = "Tienda";
-            this.btnTienda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnTienda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnTienda.UseVisualStyleBackColor = true;
-            // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.Location = new System.Drawing.Point(103, 322);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(204, 86);
-            this.btnUsuarios.TabIndex = 1;
-            this.btnUsuarios.Text = "Gestión Usuarios";
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Location = new System.Drawing.Point(97, 548);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(204, 86);
-            this.btnCerrar.TabIndex = 2;
-            this.btnCerrar.Text = "Cerrar Sesión";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // Frm_principal
             // 

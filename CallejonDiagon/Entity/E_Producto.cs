@@ -10,7 +10,7 @@ namespace CallejonDiagon.Entity
     {
         public int IdProducto { get; set; }
         public string DescripcionProducto { get; set; }
-        public string CodigoBusquedaP { get; set; }
+        public int Existencias { get; set; }
         public int IdUnidadMedida { get; set; }
         public int IdCategoria { get; set; }
         public int IdProveedor { get; set; }
