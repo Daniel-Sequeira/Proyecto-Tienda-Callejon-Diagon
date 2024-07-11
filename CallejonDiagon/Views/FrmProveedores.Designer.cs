@@ -72,7 +72,7 @@
             this.pnlTituloUsuarios.Location = new System.Drawing.Point(0, 0);
             this.pnlTituloUsuarios.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.pnlTituloUsuarios.Name = "pnlTituloUsuarios";
-            this.pnlTituloUsuarios.Size = new System.Drawing.Size(1418, 145);
+            this.pnlTituloUsuarios.Size = new System.Drawing.Size(1440, 145);
             this.pnlTituloUsuarios.TabIndex = 2;
             // 
             // pictureBox1
@@ -110,10 +110,10 @@
             this.pnlTareasUsuarios.Controls.Add(this.BtnEditarProve);
             this.pnlTareasUsuarios.Controls.Add(this.BtnRegistrarProve);
             this.pnlTareasUsuarios.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlTareasUsuarios.Location = new System.Drawing.Point(1097, 145);
+            this.pnlTareasUsuarios.Location = new System.Drawing.Point(1119, 145);
             this.pnlTareasUsuarios.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.pnlTareasUsuarios.Name = "pnlTareasUsuarios";
-            this.pnlTareasUsuarios.Size = new System.Drawing.Size(321, 681);
+            this.pnlTareasUsuarios.Size = new System.Drawing.Size(321, 702);
             this.pnlTareasUsuarios.TabIndex = 7;
             // 
             // BtnRegresar
@@ -367,7 +367,7 @@
             this.dgvProvedores.Name = "dgvProvedores";
             this.dgvProvedores.RowHeadersWidth = 82;
             this.dgvProvedores.RowTemplate.Height = 33;
-            this.dgvProvedores.Size = new System.Drawing.Size(968, 194);
+            this.dgvProvedores.Size = new System.Drawing.Size(968, 211);
             this.dgvProvedores.TabIndex = 45;
             this.dgvProvedores.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProvedores_CellEnter);
             // 
@@ -375,7 +375,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1418, 826);
+            this.ClientSize = new System.Drawing.Size(1440, 847);
             this.Controls.Add(this.dgvProvedores);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);

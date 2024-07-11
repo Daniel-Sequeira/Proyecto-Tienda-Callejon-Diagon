@@ -47,3 +47,4 @@ C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\Callejon
 C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.pdb
 C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.Views.FrmProveedores.resources
 C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.Views.FrmClientes.resources
+C:\Users\Daniel\source\repos\SlnCallejonDiagon\CallejonDiagon\obj\Debug\CallejonDiagon.Views.FrmVentas.resources

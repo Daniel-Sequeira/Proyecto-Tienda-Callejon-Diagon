@@ -104,12 +104,15 @@
     <Compile Include="Data\D_Productos.cs" />
     <Compile Include="Data\D_Proveedores.cs" />
     <Compile Include="Data\D_User.cs" />
+    <Compile Include="Data\D_SalidaProductos.cs" />
     <Compile Include="Entity\E_Categoria.cs" />
     <Compile Include="Entity\E_Cliente.cs" />
+    <Compile Include="Entity\E_DetalleSalidaProducto.cs" />
     <Compile Include="Entity\E_Empleado.cs" />
     <Compile Include="Entity\E_Producto.cs" />
     <Compile Include="Entity\E_Proveedor.cs" />
     <Compile Include="Entity\E_Tienda.cs" />
+    <Compile Include="Entity\E_SalidaProducto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\FrmCategorias.cs">
@@ -135,6 +138,12 @@
     </Compile>
     <Compile Include="Views\FrmUsuarios.Designer.cs">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmVentas.Designer.cs">
+      <DependentUpon>FrmVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Frm_Login.cs">
       <SubType>Form</SubType>
@@ -174,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmVentas.resx">
+      <DependentUpon>FrmVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>

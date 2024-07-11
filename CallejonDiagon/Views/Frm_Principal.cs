@@ -82,5 +82,11 @@ namespace CallejonDiagon.Views
             FrmClientes oFrmClientes= new FrmClientes();
             oFrmClientes.ShowDialog();
         }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            FrmVentas oFrmVentas = new FrmVentas();
+            oFrmVentas.ShowDialog();
+        }
     }
 }
