@@ -48,9 +48,10 @@ namespace CallejonDiagon.Data
                 Comando.Parameters.Add("nOpcion", MySqlDbType.Int32).Value = nOpcion;
                 Comando.Parameters.Add("nidCliente", MySqlDbType.Int32).Value = oPro.IdCliente;
                 Comando.Parameters.Add("ccedulaCLiente", MySqlDbType.VarChar).Value = oPro.CedulaCliente;
-                Comando.Parameters.Add("ccnombre", MySqlDbType.VarChar).Value = oPro.NombreCliente;
-                Comando.Parameters.Add("ccapellidosCliente", MySqlDbType.VarChar).Value = oPro.ApellidosCliente;
-                Comando.Parameters.Add("cdirecionCliente", MySqlDbType.VarChar).Value = oPro.DireccionCliente;
+                Comando.Parameters.Add("cnombreCliente", MySqlDbType.VarChar).Value = oPro.NombreCliente;
+                Comando.Parameters.Add("capellidosCliente", MySqlDbType.VarChar).Value = oPro.ApellidosCliente;
+                Comando.Parameters.Add("ccorreoCliente", MySqlDbType.VarChar).Value = oPro.CorreoCliente;
+                Comando.Parameters.Add("cdireccionCliente", MySqlDbType.VarChar).Value = oPro.DireccionCliente;
                 Comando.Parameters.Add("ctelefonoCliente", MySqlDbType.VarChar).Value = oPro.TelefonoCliente;
 
                 MySqlParameter p = new MySqlParameter();

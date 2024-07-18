@@ -46,10 +46,11 @@ namespace CallejonDiagon.Data
                 MySqlCommand Comando = new MySqlCommand("usp_guardarProveedor", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.Add("nOpcion", MySqlDbType.Int32).Value = nOpcion;
-                Comando.Parameters.Add("cnombrePreveedor", MySqlDbType.VarChar).Value = oPro.NombreProveedor;
                 Comando.Parameters.Add("nidProveedor", MySqlDbType.Int32).Value = oPro.IdProveedor;
+                Comando.Parameters.Add("ccedulaProveedor", MySqlDbType.VarChar).Value = oPro.CedulaProveedor;
+                Comando.Parameters.Add("cnombreProveedor", MySqlDbType.VarChar).Value = oPro.NombreProveedor;
                 Comando.Parameters.Add("ccorreoProveedor", MySqlDbType.VarChar).Value = oPro.CorreoProveedor;
-                Comando.Parameters.Add("cdirecionProveedor", MySqlDbType.VarChar).Value = oPro.DireccionProveedor;
+                Comando.Parameters.Add("cdireccionProveedor", MySqlDbType.VarChar).Value = oPro.DireccionProveedor;
                 Comando.Parameters.Add("ctelefonoProveedor", MySqlDbType.VarChar).Value = oPro.TelefonoProveedor;
                
                 MySqlParameter p = new MySqlParameter();

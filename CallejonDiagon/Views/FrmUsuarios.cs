@@ -190,7 +190,6 @@ namespace CallejonDiagon.Views
             if (txtCedula.Text == string.Empty ||
                 txtNombre.Text == string.Empty ||
                 txtApellidos.Text == string.Empty ||
-                txtLogin.Text == string.Empty ||
                 txtPassword.Text == string.Empty ||
                 txtCorreoEmp.Text == string.Empty ||
                 txtTelefonoEmp.Text == string.Empty)
